@@ -42,9 +42,6 @@ var showQuestionTwo = function(question) {
 	questionElem.attr('href', question.link);
 	questionElem.text(question.title);
 
-	var wasAsked = result.find(".isAnswered");
-	isAnswered.text(question.is_answered);
-
 	// set the date asked property in result
 	var asked = result.find('.asked-date');
 	var date = new Date(1000*question.creation_date);
